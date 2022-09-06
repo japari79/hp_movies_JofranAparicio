@@ -21,6 +21,7 @@
     --background-alternative: #E5E8E8;
     --background-dark: #000000;
     --background-buttom: #D4AC0D;
+    --background-buttom-hover: #6f5a04;
 
     /* Font-Sizes */
     --text-large: 5.2em;
@@ -98,7 +99,7 @@ img {
     width: 100%;
 }
 
-  
+ 
 /*-- Clases Globales --> HEADER --*/
 .header {
     display: flex;
@@ -173,7 +174,7 @@ img {
     padding: 10px;
 }
 
-.box__info{
+.box__info {
     display: flex;
     flex-direction: column;
     background-color: var(--background-alternative);
@@ -183,25 +184,30 @@ img {
     width: 90%;
 }
 
-.box__title{
+.box__info:hover {
+    font-weight: bold;
+}
+
+.box__title {
     font-family: var(--font-title);
     font-size: var(--text-medium);
     color: var(--text-primary);
 }
 
-.box__subtitle{
+.box__subtitle {
     font-family: var(--font-subtitle);
     font-size: var(--text-medium);
     color: var(--text-secondary);
 }
 
-.box__text{
+.box__text {
     margin-top: var(--spacing-xsmall);
     font-family: var(--font-text);
     font-size: var(--text-small);
     color: var(--text-dark);
     text-align: justify;
 }
+
 
 /*-- Clases --> FOOTER --*/
 .footer_section {
@@ -283,6 +289,12 @@ img {
     display: flex;
     align-items: center;
     padding: 10px;
+    opacity: 50%;
+    transition: all 0.5s ease;
+}
+
+.pBox__img:hover {
+    opacity: 100%;
 }
 
 .pBox__info {
@@ -303,8 +315,19 @@ img {
     display: grid;
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 05px;
+    column-gap: 05px;
+}
+
+.gallery__img {
+    opacity: 50%;
+    padding: 10px;
+    transition: padding 0.5s ease;
+}
+
+.gallery__img:hover {
+    opacity: 100%;
+    padding: 0;
 }
 
 .gallery__img:nth-of-type(1){
@@ -407,6 +430,13 @@ img {
     border-radius: 05px;
     width: 140px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--background-buttom-hover);
+    font-weight: bold;
+    width: 160px;
 }
 
 /*-- Media Queries --> Mobile --*/
@@ -414,7 +444,6 @@ img {
     .header {
         flex-direction: column;
         flex-wrap: wrap;
-    
     }
 
     .header__title {
