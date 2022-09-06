@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contacto</title>
+</head>
+<body id="grid_index">
+    <!-- HEADER -->
+    <header>
+        <div class="header">
+            <picture class="header__img">
+                <img src="../images/header/hp_logo.jpg" alt="Harry Potter">
+            </picture>
+            <div class="header__title">
+                <h4>Fan&aacute;ticos de Harry Potter...</h4>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="../index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/personajes.html">Personajes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/galeria.html">Galer&iacute;a</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/videos.html">Videos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="main__title">
+            <h1>Formulario de Contacto</h1>
+            <hr>
+        </div>
+        <section id="contact" class="contact">
+            <form class="contact__form">
+                <div class="contact_label">
+                    <label for="nombre">* Nombre(s) y Apellido(s):</label>
+                </div>
+                <div>
+                    <input id="nombre" class="contact_input" type="text" placeholder="Nombre(s) y Apellido(s)">
+                </div>
+                <div class="contact_label">
+                    <label for="telefono">* Teléfono de Contacto:</label>
+                </div>
+                <div>
+                    <input id="telefono" class="contact_input" type="number" placeholder="Número de Teléfono">
+                </div>    
+                <div class="contact_label">
+                    <label for="email">* E-mail:</label>
+                </div>
+                <div>
+                    <input id="email" class="contact_input" type="email" placeholder="Ej: yo@micorreo.com">
+                </div>
+                <div class="contact_label">
+                    <label for="preferencia">* Prefieres una respuesta a través de:</label>
+                </div>
+                <div>
+                    <select id="preferencia" class="contact_input">
+                        <option>Teléfono de Contacto</option>
+                        <option>E-mail</option>
+                    </select>
+                </div>   
+                <div class="contact_label">
+                    <label for="descripcion">Descripción:</label>
+                </div>
+                <div>
+                    <textarea id="descripcion" class="contact_input"></textarea>
+                </div>  
+                <div>
+                    <label>* Campos obligatorios</label>
+                </div>
+                <div>
+                    <input class="button" type="submit" value="Enviar">
+                </div>  
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section id="footer_section" class="footer_section">
+            <article class="footer">
+                <picture class="footer__img">
+                    <img src="../images/footer/hp_glasses.jpg" alt="Harry Potter">
+                </picture>
+            </article>
+            <article class="footer">
+                <h1 class="footer__title">Redes sociales:</h1>
+                <div class="footer__item">
+                    <a class="footer__link" href="https://www.facebook.com" target="_blank">
+                        <img class="footer__img" src="../images/footer/facebook.png" alt="Facebook">
+                        <span>&nbsp;Facebook</span>
+                    </a>
+                    <a class="footer__link" href="https://www.twitter.com" target="_blank">
+                        <img class="footer__img" src="../images/footer/twitter.png" alt="Twitter">
+                        <span>&nbsp;Twitter</span>
+                    </a>
+                    <a class="footer__link" href="https://www.instagram.com" target="_blank">
+                        <img class="footer__img" src="../images/footer/instagram.png" alt="Instagran">
+                        <span>&nbsp;Instagram</span>
+                    </a>
+                </div>
+            </article>
+            <article class="footer">
+                <h1 class="footer__title">Enlaces:</h1>
+                <nav>
+                    <ul class="footer__menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="../pages/personajes.html">Personajes</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="../pages/galeria.html">Galer&iacute;a</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="../pages/videos.html">Videos</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
