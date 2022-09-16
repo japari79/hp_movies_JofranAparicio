@@ -4,189 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8eb892911b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Galer&iacute;a</title>
+    <title>Videos</title>
 </head>
-<body id="grid_index">
-    <!-- HEADER -->
-    <div class="pt-4 row justify-content-center">
-        <div class="col-10 header">
-            <header>
-                <div class="row d-flex align-items-center">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <picture class="img-fluid">
-                            <img src="../images/header/hp_logo.jpg" alt="Harry Potter">
-                        </picture>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row justify-content-center">
+                <div class="header-container">
+                    <div class="header-container-top">
+                        <div>
+                            <img class="header-img" src="../images/header/hp_logo_alt.jpg" alt="Harry Potter">
+                        </div>
+                        <div class="header-title">
+                            <h1 class="text-center">Fan&aacute;ticos de <b>Harry Potter...</b></h1>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
-                        <h4 class="header__title fs-1 text-center">Fan&aacute;ticos de Harry Potter...</h4>
+                    <div class="header-container-menu">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                        <a class="nav-link" href="../pages/personajes.html">Personajes</a>
+                                        <a class="nav-link" href="../pages/galeria.html">Galer&iacute;a</a>
+                                        <a class="nav-link" href="../pages/videos.html">Videos</a>
+                                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </header>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-10 menu">
-            <nav class="menu__nav">
-                <ul class="d-flex flex-row justify-content-evenly fs-4">
-                    <li class="menu__item">
-                        <a class="menu__link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/personajes.html">Personajes</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/galeria.html">Galer&iacute;a</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/videos.html">Videos</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-10">
-            <!-- MAIN -->
-            <main class="container">
-                <div class="row">
-                    <div class="col-12 main__title">
+            </div>
+        </header>
+        <main>
+            <div class="row justify-content-center">
+                <div class="main-container">
+                    <div class="main-title">
                         <h1>Trailers de las peliculas</h1>
                         <hr>
                     </div>
-                </div>
-                <div class="row">
-                    <section id="videos" class="d-flex justify-content-center flex-column flex-wrap">
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y la piedra filosofal</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/Loglt_HkWe0" title="Harry Potter y la piedra filosofal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y la c&aacute;mara de los secretos</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/MziLH3uow6E" title="Harry Potter y la cámara de los secretos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y el prisionero de Azcaban</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/V9FN5uTdnD0" title="Harry Potter y el prisionero de Azcaban" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y el c&aacute;liz de fuego</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/wX5dWfUKGPg" title="Harry Potter y el cáliz de fuego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y la orden de F&eacute;nix</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/jdEulcjAvQI" title="Harry Potter y la orden de Fénix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y el misterio del pr&iacute;ncipe</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/CHiGk9bEht8" title="Harry Potter y el misterio del príncipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y las reliquias de la muerte - Parte 1</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/OLUH2cx4NjQ" title="Harry Potter y las reliquias de la muerte" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="mb-3 media__info">
-                                <h2 class="media__title text-center">Harry Potter y las reliquias de la muerte - Parte 2</h2>
-                            </div>
-                            <div class="mb-5 text-center">
-                                <iframe class="media__iframe" src="https://www.youtube.com/embed/HguSMW8XveQ" title="Harry Potter y las reliquias de la muerte" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </main>
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <div class="row justify-content-center">
-        <div class="col-12 footer">
-            <footer>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-10">
-                        <section id="footer" class="d-flex flex-row justify-content-around footer_section">
-                            <article>
-                                <picture class="footer__img">
-                                    <img src="../images/footer/hp_glasses.jpg" alt="Harry Potter">
-                                </picture>
-                            </article>
-                            <article>
-                                <h1 class="footer__title fs-4">Redes sociales:</h1>
-                                <div class="footer__item fs-5 d-flex flex-column align-items-left">
-                                    <a class="footer__link" href="https://www.facebook.com" target="_blank">
-                                        <img class="footer__img" src="../images/footer/facebook.png" alt="Facebook">
-                                        <span>&nbsp;Facebook</span>
-                                    </a>
-                                    <a class="footer__link" href="https://www.twitter.com" target="_blank">
-                                        <img class="footer__img" src="../images/footer/twitter.png" alt="Twitter">
-                                        <span>&nbsp;Twitter</span>
-                                    </a>
-                                    <a class="footer__link" href="https://www.instagram.com" target="_blank">
-                                        <img class="footer__img" src="../images/footer/instagram.png" alt="Instagran">
-                                        <span>&nbsp;Instagram</span>
-                                    </a>
+                    <div class="container-media">
+                        <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <label class="text-highlighted-yellow">2001</label>&nbsp;Harry Potter y la piedra filosofal
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/Loglt_HkWe0" title="Harry Potter y la piedra filosofal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                 </div>
-                            </article>
-                            <article>
-                                <h1 class="footer__title fs-4">Enlaces:</h1>
-                                <nav>
-                                    <ul class="footer__menu fs-5">
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="../index.html">Inicio</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="../pages/personajes.html">Personajes</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="../pages/galeria.html">Galer&iacute;a</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="../pages/videos.html">Videos</a>
-                                        </li>
-                                        <li class="menu__item">
-                                            <a class="menu__link" href="../pages/contacto.html">Contacto</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </article>
-                        </section>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <label class="text-highlighted-yellow">2002</label>&nbsp;Harry Potter y la c&aacute;mara de los secretos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/MziLH3uow6E" title="Harry Potter y la cámara de los secretos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <label class="text-highlighted-yellow">2004</label>&nbsp;Harry Potter y el prisionero de Azcaban
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/V9FN5uTdnD0" title="Harry Potter y el prisionero de Azcaban" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <label class="text-highlighted-yellow">2005</label>&nbsp;Harry Potter y el c&aacute;liz de fuego
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/wX5dWfUKGPg" title="Harry Potter y el cáliz de fuego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <label class="text-highlighted-yellow">2007</label>&nbsp;Harry Potter y la orden de F&eacute;nix
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/jdEulcjAvQI" title="Harry Potter y la orden de Fénix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        <label class="text-highlighted-yellow">2009</label>&nbsp;Harry Potter y el misterio del pr&iacute;ncipe
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/CHiGk9bEht8" title="Harry Potter y el misterio del príncipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        <label class="text-highlighted-yellow">2010</label>&nbsp;Harry Potter y las reliquias de la muerte - Parte 1
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/OLUH2cx4NjQ" title="Harry Potter y las reliquias de la muerte" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                        <label class="text-highlighted-yellow">2011</label>&nbsp;Harry Potter y las reliquias de la muerte - Parte 2
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body text-center">
+                                        <iframe class="media-iframe" src="https://www.youtube.com/embed/HguSMW8XveQ" title="Harry Potter y las reliquias de la muerte" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row justify-content-center">
+                <div class="footer-container">
+                    <div class="footer-container-left">
+                        <img class="footer-img" src="../images/footer/hp_glasses.jpg" alt="Harry Potter">
+                    </div>
+                    <div class="footer-container-middle">
+                        <h1 class="footer-title fs-6">Redes sociales:</h1>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <i class="fa-brands fa-square-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com" target="_blank">
+                                        <i class="fa-brands fa-square-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-container-right">
+                        <h1 class="footer-title fs-6">Enlaces:</h1>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li><a class="footer-link" href="../index.html">Inicio</a></li>
+                                <li><a class="footer-link" href="../pages/personajes.html">Personajes</a></li>
+                                <li><a class="footer-link" href="../pages/galeria.html">Galer&iacute;a</a></li>
+                                <li><a class="footer-link" href="../pages/videos.html">Videos</a></li>
+                                <li><a class="footer-link" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 </html>
