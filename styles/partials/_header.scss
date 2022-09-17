@@ -1,0 +1,35 @@
+.header-container {
+    margin-top: 20px;
+    width: 95%;
+    .header-container-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $background-alternative;
+        border-top-left-radius: 05px;
+        border-top-right-radius: 05px;
+        padding: 05px;
+        .header-img {
+            border-radius: 05px;
+        }
+        .header-title {
+            font-family: $font-title;
+            color: $text-primary;
+        }
+    }
+    .header-container-bottom {
+        background-color: $background-secondary;
+        border-bottom-right-radius: 05px;
+        border-bottom-left-radius: 05px;
+    }
+    @media screen and (max-width:480px) {
+        .header-container-top {
+            flex-direction: column;
+            .header-title {
+                h1 {
+                    font-size: $text-small;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 80%;
+}
+
+.contact-form {
+    width: 40%;
+    .form-label,
+    .form-control,
+    .form-select {
+        font-family: $font-text;
+        color: $text-dark;
+        font-size: small;
+    }
+    .form-label {
+        color: $text-alternative;    
+    }
+    .form-text {
+        font-family: $font-text;
+    }
+    .form-control:focus {
+        border-color: $text-secondary;
+        box-shadow: none;
+    }
+    @media screen and (max-width:480px) {
+        width: 100%;
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+.navbar-nav {
+    font-family: $font-menu;
+    .nav-link {
+        color: $text-alternative;
+        &:hover {
+            color: $text-secondary;
+        }
+    }
+    @media screen and (max-width:480px) {
+        font-size: $text-mobile;
+    }
+}
+
+.card {
+    opacity: 70%;
+    transition: all 0.5s ease;
+    .card-img-top {
+        height: 20rem;
+    }
+    .card-body {
+        .card-title {
+            font-family: $font-title;
+            color: $text-dark;
+            font-weight: bold;
+        }
+        .card-subtitle {
+            font-family: $font-subtitle;
+            color: $text-secondary;
+        }
+        .card-text {
+            font-family: $font-text;
+            color: $text-primary;
+            font-size: small;
+        }
+    }
+    &:hover {
+        opacity: 100%;
+    }
+    @media screen and (max-width:480px) {
+        .card-img-top {
+            height: 18rem;
+        }
+        .card-body {
+            .card-text {
+                font-size: $text-mobile;
+            }
+        }
+    }
+}
+
+.accordion {
+    width: 600px;
+    .accordion-item {
+        background: transparent;
+        .accordion-button {
+            background-color: $background-secondary;
+            font-family: $font-title;
+            color: $text-alternative;
+            &:hover {
+                color: $text-secondary;
+            }
+            .text-highlighted-yellow {
+                color: $text-secondary;
+                font-weight: bold;
+            }
+        }
+        .collapsed { 
+            color: $text-alternative;
+        }
+    }
+    @media screen and (max-width:480px) {
+        width: 440px;
+    }
+}
