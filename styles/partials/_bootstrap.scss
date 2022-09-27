@@ -1,8 +1,3 @@
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
 .carousel {
     width: 80%;
 }
@@ -13,17 +8,17 @@
     .form-control,
     .form-select {
         font-family: $font-text;
-        color: $text-dark;
+        color: map-get($text-colors, text-dark);
         font-size: small;
     }
     .form-label {
-        color: $text-alternative;    
+        color: map-get($text-colors, text-alternative);   
     }
     .form-text {
         font-family: $font-text;
     }
     .form-control:focus {
-        border-color: $text-secondary;
+        border-color: map-get($form-colors, secondary);
         box-shadow: none;
     }
     @media screen and (max-width:480px) {
@@ -37,13 +32,13 @@
 .navbar-nav {
     font-family: $font-menu;
     .nav-link {
-        color: $text-alternative;
+        color: map-get($text-colors, text-alternative);
         &:hover {
-            color: $text-secondary;
+            color: map-get($text-colors, text-secondary);
         }
     }
     @media screen and (max-width:480px) {
-        font-size: $text-mobile;
+        font-size: map-get($text-size, text-mobile);
     }
 }
 
@@ -56,16 +51,16 @@
     .card-body {
         .card-title {
             font-family: $font-title;
-            color: $text-dark;
+            color: map-get($text-colors, text-dark);
             font-weight: bold;
         }
         .card-subtitle {
             font-family: $font-subtitle;
-            color: $text-secondary;
+            color: map-get($text-colors, text-secondary);
         }
         .card-text {
             font-family: $font-text;
-            color: $text-primary;
+            color: map-get($text-colors, text-primary);
             font-size: small;
         }
     }
@@ -78,7 +73,7 @@
         }
         .card-body {
             .card-text {
-                font-size: $text-mobile;
+                font-size: map-get($text-size, text-mobile);
             }
         }
     }
@@ -89,19 +84,19 @@
     .accordion-item {
         background: transparent;
         .accordion-button {
-            background-color: $background-secondary;
+            background-color: map-get($background-colors, background-secondary);
             font-family: $font-title;
-            color: $text-alternative;
+            color: map-get($text-colors, text-alternative);
             &:hover {
-                color: $text-secondary;
+                color: map-get($text-colors, text-secondary);
             }
             .text-highlighted-yellow {
-                color: $text-secondary;
+                color: map-get($text-colors, text-secondary);
                 font-weight: bold;
             }
         }
         .collapsed { 
-            color: $text-alternative;
+            color: map-get($text-colors, text-alternative);
         }
     }
     @media screen and (max-width:480px) {

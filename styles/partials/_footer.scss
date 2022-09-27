@@ -1,12 +1,14 @@
 footer {
-    background-color: $background-secondary;
+    background-color: map-get($background-colors, background-secondary);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding-top: 25px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-around;
-    background-color: $background-dark;
+    background-color: map-get($background-colors, background-dark);
     font-family: $font-text;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -22,14 +24,14 @@ footer {
         flex-direction: column;
         padding: 10px;
         .footer-title{
-            color: $text-secondary;
+            color: map-get($text-colors, text-secondary);
         }
         .fa-brands {
-            color: $text-alternative;
+            color: map-get($text-colors, text-alternative);
             text-decoration: none;
             transition: all;
             &:hover {
-                color: $text-secondary;
+                color: map-get($text-colors, text-secondary);
             }
         }
         .fa-square-facebook,
@@ -41,14 +43,14 @@ footer {
     .footer-container-right {
         padding: 10px;
         .footer-title{
-            color: $text-secondary;
+            color: map-get($text-colors, text-secondary);
         }
         .footer-link {
-            color: $text-alternative;
+            color: map-get($text-colors, text-alternative);
             text-decoration: none;
             transition: all;
             &:hover {
-                color: $text-secondary;
+                color: map-get($text-colors, text-secondary);
             }
         }
     }
@@ -67,7 +69,7 @@ footer {
         }
         .footer-container-right {
             .footer-link {
-                font-size: $text-mobile;
+                font-size: map-get($text-size, text-mobile)
             }
         }
     }

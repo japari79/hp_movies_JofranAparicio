@@ -1,0 +1,10 @@
+.button_E {
+    @extend %button-default;
+    @include colors(map-get($button-colors, button-primary));
+    background-color: map-get($button-colors, button-primary);
+}
+
+.button_L {
+    @extend .button_E;
+    background-color: map-get($button-colors, button-secundary);
+}

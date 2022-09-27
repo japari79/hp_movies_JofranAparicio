@@ -1,0 +1,11 @@
+%button-default {
+    border: 0;
+    padding: 05px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: map-get($button-colors, button-hover);
+        font-weight: bold;
+        width: 160px;
+    }
+}
