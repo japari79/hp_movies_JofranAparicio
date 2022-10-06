@@ -85,6 +85,9 @@ img {
             grid-column: 7  /  10;
         }
     }
+    .container-contact {
+        display: flex;
+    }
     @media screen and (max-width:480px) {
         .main-title {
             text-align: center;
@@ -92,7 +95,7 @@ img {
         .container-gallery {
             grid-template-columns: repeat(6,1fr);
             grid-template-rows: repeat(5, auto);
-            width: 90%;
+            width: 100%;
             .gallery-img:nth-of-type(1){
                 grid-column: 1  /  4;
             }
@@ -126,10 +129,12 @@ img {
                 width: 400px;
             }
         }
-
-        .button_E,
-        .button_L {
-            width: 100%;
+        .container-contact {
+            flex-direction: column;
+            .button_E,
+            .button_L {
+                width: 100%;
+            }
         }
     }
 }

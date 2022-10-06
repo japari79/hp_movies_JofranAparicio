@@ -14,7 +14,7 @@
 .button_E, .button_L {
   border-radius: 5px;
   width: 140px;
-  color: color;
+  color: #000000;
   background-color: #D4AC0D;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .contact-form {
-  width: 40%;
+  width: 80%;
 }
 .contact-form .form-label,
 .contact-form .form-control,
@@ -48,9 +48,6 @@
 }
 @media screen and (max-width: 480px) {
   .contact-form {
-    width: 100%;
-  }
-  .contact-form .btn {
     width: 100%;
   }
 }
@@ -97,6 +94,9 @@
 @media screen and (max-width: 480px) {
   .card .card-img-top {
     height: 18rem;
+  }
+  .card .card-body {
+    padding: 5px;
   }
   .card .card-body .card-text {
     font-size: 0.7em;
@@ -250,6 +250,9 @@ img {
 .main-container .container-gallery .gallery-img:nth-of-type(9) {
   grid-column: 7/10;
 }
+.main-container .container-contact {
+  display: flex;
+}
 @media screen and (max-width: 480px) {
   .main-container .main-title {
     text-align: center;
@@ -257,7 +260,7 @@ img {
   .main-container .container-gallery {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
-    width: 90%;
+    width: 100%;
   }
   .main-container .container-gallery .gallery-img:nth-of-type(1) {
     grid-column: 1/4;
@@ -289,8 +292,11 @@ img {
   .main-container .container-media .media-iframe {
     width: 400px;
   }
-  .main-container .button_E,
-.main-container .button_L {
+  .main-container .container-contact {
+    flex-direction: column;
+  }
+  .main-container .container-contact .button_E,
+.main-container .container-contact .button_L {
     width: 100%;
   }
 }

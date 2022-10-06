@@ -3,7 +3,7 @@
 }
 
 .contact-form {
-    width: 40%;
+    width: 80%;
     .form-label,
     .form-control,
     .form-select {
@@ -23,9 +23,6 @@
     }
     @media screen and (max-width:480px) {
         width: 100%;
-        .btn {
-            width: 100%;
-        }
     }
 }
 
@@ -72,6 +69,7 @@
             height: 18rem;
         }
         .card-body {
+            padding: 5px;
             .card-text {
                 font-size: map-get($text-size, text-mobile);
             }

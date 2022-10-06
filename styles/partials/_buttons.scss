@@ -1,6 +1,6 @@
 .button_E {
     @extend %button-default;
-    @include colors(map-get($button-colors, button-primary));
+    @include colors(map-get($text-colors, text-dark));
     background-color: map-get($button-colors, button-primary);
 }
 

@@ -55,38 +55,47 @@
                         <h1>Formulario de Contacto</h1>
                         <hr>
                     </div>
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre(s) y Apellido(s):</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre(s) y Apellido(s)">
+                    <div class="container-contact">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <form class="contact-form">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre(s) y Apellido(s):</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre(s) y Apellido(s)">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">* Teléfono de Contacto:</label>
+                                    <input id="telefono" class="form-control" type="number" placeholder="Número de Teléfono">
+                                </div>    
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">* E-mail:</label>
+                                    <input id="email" class="form-control" type="email" placeholder="Ej: yo@micorreo.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="preferencia" class="form-label">* Prefieres una respuesta a través de:</label>
+                                    <select id="preferencia" class="form-control form-select">
+                                        <option>Teléfono de Contacto</option>
+                                        <option>E-mail</option>
+                                    </select>
+                                </div>   
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">Descripción:</label>
+                                    <textarea id="descripcion" class="form-control" rows="4"></textarea>
+                                </div>  
+                                <div class="mb-3">
+                                    <div class="form-text">* Campos obligatorios</div>
+                                </div>
+                                <div class="mb-3">
+                                    <button type="button" class="mb-2 button_E">Enviar</button>
+                                    <button type="button" class="mb-2 button_L">Limpiar</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">* Teléfono de Contacto:</label>
-                            <input id="telefono" class="form-control" type="number" placeholder="Número de Teléfono">
-                        </div>    
-                        <div class="mb-3">
-                            <label for="email" class="form-label">* E-mail:</label>
-                            <input id="email" class="form-control" type="email" placeholder="Ej: yo@micorreo.com">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <picture>
+                                <img class="contact-img" src="../images/shields/harry-casas.png" alt="Casas de Hogwarts">
+                            </picture>
                         </div>
-                        <div class="mb-3">
-                            <label for="preferencia" class="form-label">* Prefieres una respuesta a través de:</label>
-                            <select id="preferencia" class="form-control form-select">
-                                <option>Teléfono de Contacto</option>
-                                <option>E-mail</option>
-                            </select>
-                        </div>   
-                        <div class="mb-3">
-                            <label for="descripcion" class="form-label">Descripción:</label>
-                            <textarea id="descripcion" class="form-control" rows="4"></textarea>
-                        </div>  
-                        <div class="mb-3">
-                            <div class="form-text">* Campos obligatorios</div>
-                        </div>
-                        <div class="mb-3">
-                            <button type="button" class="mb-2 button_E">Enviar</button>
-                            <button type="button" class="mb-2 button_L">Limpiar</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </main>
